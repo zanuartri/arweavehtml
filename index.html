@@ -3,71 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halaman Web Sederhana</title>
+    <title>Halaman Web Monokrom</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
+      * {
         margin: 0;
         padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
+        box-sizing: border-box;
       }
 
-      header {
-        background-color: #4caf50;
-        color: white;
-        padding: 1rem 0;
-        text-align: center;
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
 
       nav {
-        background-color: #333;
-        color: white;
+        background-color: #444;
         padding: 0.5rem;
         text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
 
       nav a {
-        color: white;
+        color: #e0e0e0;
         text-decoration: none;
-        margin: 0 1rem;
+        margin: 0 1.5rem;
+        font-weight: bold;
+        transition: color 0.3s;
       }
 
       nav a:hover {
-        text-decoration: underline;
+        color: #b3b3b3;
       }
 
       main {
-        padding: 2rem;
+        flex: 1;
+        padding: 3rem 2rem;
         text-align: center;
+      }
+
+      main h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #ffffff;
+      }
+
+      main p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: #cccccc;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: #555;
+        color: #e0e0e0;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #777;
       }
 
       footer {
         background-color: #333;
-        color: white;
+        color: #e0e0e0;
         text-align: center;
         padding: 1rem 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+      }
+
+      footer p {
+        font-size: 0.9rem;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Selamat Datang di Halaman Web Sederhana</h1>
-    </header>
     <nav>
       <a href="#">Beranda</a>
       <a href="#">Tentang</a>
+      <a href="#">Layanan</a>
       <a href="#">Kontak</a>
     </nav>
     <main>
       <h2>Halo, Dunia!</h2>
-      <p>Ini adalah contoh halaman web sederhana dengan HTML dan CSS dasar.</p>
+      <p>
+        Ini adalah contoh halaman web dengan tema monokrom yang sederhana dan
+        elegan.
+      </p>
+      <a href="#" class="btn">Pelajari Lebih Lanjut</a>
     </main>
     <footer>
-      <p>&copy; 2024 Halaman Web Sederhana. Dibuat dengan cinta.</p>
+      <p>
+        &copy; 2024 Halaman Web Monokrom. Dibuat dengan semangat dan dedikasi.
+      </p>
     </footer>
   </body>
 </html>
